@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema55.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<style type="text/css">
+body,td,th {
+	color: #000;
+}
+</style>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/tapete.jpg','imagenes/2.jpg','imagenes/10.jpg','imagenes/oa.jpg','imagenes/agua.jpg','imagenes/28.jpg','imagenes/52.jpg','imagenes/54.jpg','imagenes/56.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="a">
+<h1>Día Internacional De La Tierra </h1>
+</div>
+<center>
+<img src="imagenes/tapete1.jpg" width="100%" height="70%" >
+</center>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es el Día de la Tierra?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Cuándo Inicio?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Cómo se celebra?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Por qué se celebra?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de Contaminación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Calentamiento Global</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación en mi Comunidad</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Acciones para evitar la Contaminación</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicación Cinco</h4>
+  <h4>Pérez Salvador Diana Laura</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Qué es el Día de la Tierra?</h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. </p>
+  <p>Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra.</p>
+ 
+  <img src ="imagenes/jesus.jpg" width="70%" height="40%">
+  <p> Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos. </p>
+  <img src ="imagenes/cristo.jpg" width="70%" height="40%">
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+<h4>Pérez Salvador Diana Laura</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Cuándo Inicio?</h1>
+ </div>
+<div data-role="content">
+ <div>
+ <center>
+  <img src ="imagenes/catolicos.jpg" width="70%" height="40%">
+  </center>
+ <p>En 1968, Morton Hilbert y el U.S. Public Health Service (Servicio de Salud Pública de E.E.U.U.), organizaron el Simposio de Ecología Humana, se realiza una conferencia por los nombrados anteriormente para una asamblea o conferencia medioambiental para que estudiantes escucharan a científicos hablar sobre los efectos del deterioro ambiental en la salud humana.</p>
+<p> Este fue el primero de varios eventos realizados en campus universitarios por todo Estados Unidos. Así mismo, Ralph Nader empezó a hablar acerca de la importancia de la ecología en 1970.</p>
+
+
+En 1972 se celebró la primera conferencia internacional sobre el medio ambiente. La Cumbre de la Tierra de Estocolmo, cuyo objetivo fue sensibilizar a los líderes mundiales sobre la magnitud de los problemas ambientales.</p>
+ <center>
+ <img src ="imagenes/cristiano.jpg" width="70%" height="40%">
+ </center>
+
+<P>Este fue el primer antecedente del Día de la Tierra. Durante los siguientes dos años, Hilbert y sus estudiantes trabajaron para planear el primer Día de la Tierra.3 Surgieron otros esfuerzos como Survival Project (Proyecto para la Supervivencia), uno de los primeros eventos educacionales de conciencia ambiental, que fue llevado a cabo en la Universidad Northwestern el 23 de enero de 1970.</P>
+
+<p>La primera manifestación tuvo lugar el 22 de abril de 1970, promovida por el senador y activista ambiental Gaylord Nelson, para la creación de una agencia ambiental. En esta convocatoria participaron dos mil universidades, diez mil escuelas (primarias y secundarias) y centenares de comunidades. La presión social tuvo sus logros y el gobierno de los Estados Unidos creó la Environmental Protection Agency (Agencia de Protección Ambiental) y una serie de leyes destinadas a la protección del medio ambiente.</p>
+<center>
+ <img src ="imagenes/jehova.jpg" width="70%" height="40%">
+ </center>
+ </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+<h4>Pérez Salvador Diana Laura</h4>
+  </div>
+  </div>
+  </div>
+ 
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>¿Cómo se celebra?</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+<p>Nosotros mismos, y al margen de sumarnos a los actos que se organizan en todos los países, podemos celebrar El día de la Tierra de una forma ecológica y de manera particular. ¿Qué podemos hacer? Pues podemos realizar pequeños actos que en conjunto que en realidad conformen grandes actos. Aquí te dejamos algunas recomendaciones de como celebrarlo.</p>
+<img src ="imagenes/1.jpg" width="100%" height="100%">
+<p>Recomendar  a un amigo que cambie de las lámparas incandescentes a las lámparas de bajo consumo.</p>
+<p>Tienes que hablar a la gente sobre los beneficios de las energías renovables, y lo malas que son las energías fósiles para nuestro mundo.</p>
+<p>Aconsejar a todos que por un día, desconecten su conexión a internet y que apenas gasten electricidad.</p>
+<p>Otra idea es plantar un árbol. E invitar a nuestros amigos a hacer lo mismo.</p>
+<p>Enseñar a los niños a apreciar y a cuidar a la naturaleza. Y sobre la importancia de la biodiversidad.</p>
+<p>Juega con los niños en la calle. Aprovecha este día para enseñarles por ejemplo la importancia de cuidar del medio ambiente pero no desde casa, o desde un ordenador</p>
+<p>Decir a esa persona que ha arrojado basura en la calle, que la levante y la tire en el contenedor de la basura.</p>
+<p>Reciclar, y alentar a vuestros amigos también a que lo hagan. Que sepan  qué es biodegradable y qué no lo es.</p>
+<p>No utilices bolsas de plástico, y si se tienen que usar, lo mejor es reciclarlas. Puedes utilizar las que nos dan en los comercios como bolsas de residuos. Se pueden difundir estas ideas entre vuestros  amigos. Miles de animales os lo van a agradecer.</p>
+<p>Se puede difundir entre quienes no lo saben, qué es el calentamiento global, y qué asociación tiene con el cambio climático.</p>
+ </div>
+ </div>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false"> 
+<h1>Paisaje</h1>
+<p>Pagina sobre el medio ambiente: <a href="http://www.wwf.org.mx/?gclid=CKe2-sTrscwCFVGAaQodB6IFgA">http://www.wwf.org.mx/?gclid=CKe2-sTrscwCFVGAaQodB6IFgA</a></p>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/tapete.jpg',1)"><img src="imagenes/tierra.jpg" width="70%" height="70%" id="Image15"></a>
+ </div>
+ </div>
+ </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+<h4>Pérez Salvador Diana Laura</h4>
+ </div>
+ </div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>¿Porque se Celebra?</h1>
+ </div>
+ <br>
+ <p>Más que nada es para crear conciencia sobre nuestro planeta, que estamos haciendo con el, y que debemos hacer para mejorar</p>
+ <p>Este 22 de abril se conmemoran 50 años del Día de la Tierra, fecha en la que países del mundo rinden tributo a la Pachamama y elevan un llamado de reflexión a la humanidad de cara a los problemas ambientales que azotan al planeta.</p>
+ <center>
+<img src ="imagenes/puebla.jpg" width="70%" height="70%">
+</center>
+ <div data-role="content" align="center">
+ <div>
+ <p>Esta festividad se remonta a 1970, cuando 2.000 universidades, 10.000 escuelas y centenares de comunidades estadounidenses salieron a las calles, como parte de una manifestación multitudinaria para exigir la creación de una agencia para la preservación del medio ambiente.</p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/2.jpg',1)"><img src="imagenes/jesus.jpg" width="70%" height="70%" id="Image16"></a> </p>
+ <p>Este año el día está dedicado a los árboles, por ello el objetivo para conmemorar la fecha será la siembra de 7,8 millones de especies en los próximos cinco años, refiere el portal Web de la Organización de las Naciones Unidas (ONU)</p>
+  </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicación Cinco</h4>
+<h4>Pérez Salvador Diana Laura</h4>
+ </div>	
+ </div>
+ </div>
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Tipos de Contaminación</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <center>
+  <h2>Contaminación Del Agua</h2>
+  </center>
+  <center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/agua.jpg',1)"><img src="imagenes/10.jpg" width="275" height="183" id="Image18"></a>
+  </center>
+ 
+  <p>La contaminación hídrica o contaminación del agua es una modificación generalmente, provocada por el hombre, haciéndola impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales y la vida natural.</p>
+   <center>
+   <h2>Contaminación del Suelo</h2>
+   </center>
+   <center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/28.jpg',1)"><img src="imagenes/25.jpg" width="275" height="183" id="Image19"></a>
+   </center>
+  <p>La contaminación del suelo consiste en la acumulación de sustancias a unos niveles tales que repercuten negativamente en el comportamiento de los suelos. Las sustancias, a esos niveles de concentración, se vuelven tóxicas para los organismos del suelo.Presencia de desechos en el suelo, a causa de actividades agrícolas y ganaderas.</p>
+  <center>
+  <h2>Contaminación Sonora</h2>
+  </center>
+  <center>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/52.jpg',1)"><img src="imagenes/51.jpg" width="256" height="197" id="Image20"></a>
+</center>
+  <p>La contaminación sonora se denomina a cualquier sonido que produzca molestar o que resulte excesivo en una determinada zona. Las personas que viven en las grandes ciudades sufren a menudo el ruido provocado por el tráfico de los coches, las bocinas de los autobuses y el paso de los trenes.</p>
+  <center>
+  <h2>Contaminación Radiactiva</h2>
+  </center>
+  <center>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/54.jpg',1)"><img src="imagenes/53.jpg" width="275" height="183" id="Image21"></a>
+ </center>
+  <p>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radiactivas en el entorno. Ésta contaminación puede proceder de radioisótopos naturales o artificiales.</p>
+  <center>
+  <h2>Contaminación Térmica</h2>
+  </center>
+  <center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/56.jpg',1)"><img src="imagenes/55.jpg" width="283" height="194" id="Image22"></a>
+  </center>
+  <p>El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente. Pero también es posible, por ejemplo, cuando se concentra una gran cantidad de aparatos de aire acondicionado y estos expulsan el calor hacia la calle. </p>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+ <h4>Pérez Salvador Diana Laura</h4>
+  </div>
+  </div>
+  </div>
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Calentamiento Global</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+   <center>
+   <img src ="imagenes/57.jpg" width="70%" height="40%">
+   </center>
+  <p>El término Calentamiento Global se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro.</p>
+ 
+  <p>Nadie pone en duda el aumento de la temperatura global, lo que todavía genera controversia es la fuente y razón de este aumento de la temperatura. Aún así, la mayor parte de la comunidad científica asegura que hay más que un 90% de certeza que el aumento se debe al aumento de las concentraciones de gases de efecto invernadero por las actividades humanas que incluyen deforestación y la quema de combustibles fósiles como el petróleo y el carbón. Estas conclusiones son avaladas por las academias de ciencia de la mayoría de los países industrializados.</p>
+  <center>
+<img src ="imagenes/58.jpg" width="70%" height="40%">
+</center>
+  <P>Si se revisa el gráfico de las temperaturas de la superficie terrestre de los últimos 100 años, se observa un aumento de aproximadamente 0.8ºC, y que la mayor parte de este aumento ha sido en los últimos 30 años.</P>
+ </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+  <h4>Pérez Salvador Diana Laura</h4>
+  </div>
+  </div>
+  </div>
+  
+  
+   <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Contaminación de mi Comunidad</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+<iframe src="visor/comunidad.html" style="width:960px;height:250px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+  <p>Mi comunidad es la Colonia Altavista donde se presentan varios tipos de contaminación, gracias que las personas ignorantes no toman en cuenta.</p>
+  <p>Uno de los mayores problemas es la basura en la calle, los excremento de los animalitos, la contaminación sonora, la contamianción del agua, gracias a que la basura tapa el drenaje.
+ </p>
+ <p>Al igual que la contaminación sonora, que los vecinos ponen toda la musica a todo el volumen, ya no hay respeto hacia otras casas.</p>
+ <p>Para poder evitarlo, seria que crearamos una campaña para que los hagamos tener cociencia sobre su planeta, enseñar lo que esta mal y todo así.</p>
+</div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+ <h4>Pérez Salvador Diana Laura</h4>
+   </div>
+  </div>
+  </div>
+   <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Acciones para evitar la Contaminación</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <center>
+  <img src ="imagenes/2.jpg" width="70%" height="40%">
+  </center>
+  <ol>
+  <li>  Antes de comprar un producto, hazte la pregunta si realmente lo necesitas. Cualquier consumo innecesario es en esencia antiecológico y antieconómico, ¿no lo crees?.</li>
+    <li> Sé crítico con la publicidad. Mira las cualidades de los productos, no los sueños que te venden en la publicidad muchas veces engañosa</li>
+    <li>Antes de tirar cualquier cosa a la basura, piensa si se puede reutilizar, reciclar o reparar, o si puede ser útil para otra persona.</li>
+    <li> Evita las latas de bebidas, vale más el envase que su contenido y apenas se recuperan. La energía necesaria para producir y transportar una lata equivale a la mitad del bote lleno de petróleo.</li>
+    <li>La energía que producen las pilas es más de 600 veces más cara que la de la red. Conecta los aparatos a la red siempre que esto sea posible. Si te es imprescindible usar pilas (nunca tires las usadas a la basura), procura que sean recargables.</li>
+    <li>Desconecta los aparatos eléctricos de la red cuando no están funcionando. Algunos aparatos (como televisores) siguen gastando hasta un 33% de la energía.</li>
+    <li>Prescinde de los electrodomésticos innecesarios como cepillos de dientes, abrelatas, cuchillos eléctricos, etc. Son mas cómodos algunos pero ninguno se iguala al sentimiento de hacerlo manualmente y saber que ahorraste miles de kilogramos de gases contaminantes que pudieron haberse liberado en alguna fábrica …China, seguro. Ten encuenta los criterios de ahorro energético al comprar nuevos frigoríficos, lavadoras, etc.</li>
+    <li> Usa bombillas LED que duran mucho más que las bombillas  tradicionales y que inclusiva las fluorescentes. Son de bajo consumo de energía para dar la misma cantidad de luz, con lo cual se termina ahorrando dinero y colaborando con el medio ambiente.</li>
+    <li> Evita los aerosoles que contienen CFCs y que son causantes de la destrucción de la capa de ozono, u otros gases que también contribuyen al efecto invernadero. Los pulverizadores son una buena alternativa y son recargables.</li>
+    <li>La gran mayoría de los productos de limpieza que se anuncian no sólo son innecesarios sino también muy nocivos para el medio ambiente. Casi toda la casa puede quedar perfectamente limpia con jabón, bicarbonato, vinagre y limón.</li>
+    <li>Los ambientadores no eliminan los malos olores sino que desprenden otros más fuertes que nos impiden detectar los primeros. Que éstos sean legítimamente ecológicos, biodegradables y libres de químicos agresivos.</li>
+    <li>Evita usar productos agresivos: limpiahornos, lejía, etc., que impiden los procesos biológicos de depuración del agua. Nunca tires productos tóxicos, pintura o aceite de cocinar al desagüe. Llama a la empresa de agua y alcantarillado y pregunta. Esa es la salida moralmente correcta y tendrás a tu consciencia feliz. Lo otro, tirar donde te apetece para ser un “borrego” mas de los que sobran.</li>
+    <li>Para ahorrar agua, instala un sistema de doble descarga en el inodoro, ya que vaciar la cisterna entera supone gastar de 10 a litros. Repara los grifos que gotean. Una gota por segundo son 30 litros al día. Hay que poner el hombro al cuidado del medio ambiente.</li>
+    <li>Tapa siempre las cazuelas para no despilfarrar calor. La olla exprés es la mejor opción: ahorra tiempo y energía. Si no, son preferibles las cazuelas de hierro, acero inoxidable o barro antes que las de aluminio.</li>
+    <li> En la alimentación, evita la comida basura o precocinada, ya que suele contener muchos aditivos y conservantes y viene sobreempaquetada. Procura consumir alimentos frescos, de temporada y de producción local.</li>
+    <li>Rechaza los alimentos envasados en bandejas de poliestireno expandido (corcho blanco). Los productos no son mejores porque vengan envueltos en plástico.</li>
+    <li> Guarda los alimentos en la clásica fiambrera o tarros de cristal en lugar de envolverlos o taparlos con película de plástico o aluminio.</li>
+    <li> Evita los productos que recorren grandes distancias antes de llegar al consumidor. Da preferencia a las alternativas locales. No tiene sentido consumir miel chilena, cerveza mejicana o galletas danesas. Solo incrementas la huella ecológica que dejas en el planeta.</li>
+    <li>Aprovecha bien el papel: úsalo por las dos caras, utilízalo reciclado y envíalo después a reciclar. Rechaza el papel blanqueado con cloro.</li>
+    <li>Apúntate a la Lista Robinson para dejar de recibir publicidad personalizada por correo. Coloca un distintivo en tu buzón indicando que no quieres propaganda.</li>
+    <li>Si te es imprescindible usar el coche para acudir al trabajo, compártelo con otros compañeros o vecinos (“carpool“). En el tiempo o las vacaciones, no recurras siempre al coche, explora otras posibilidades de viajar o hacer excursiones en transporte público.</li>
+    <li>Es absurdo pretender estar en manga corta durante el invierno, a costa de gastar mucha calefacción. Es preferible ponerse un jersey. En verano no abuses del aire acondicionado, que también libera CFCs.</li>
+    <li>Evita los productos con PVC. Producen furanos y dioxinas cuando son incinerados.</li>
+    <li>Si te ha caducado algún medicamento, no lo tires a la basura ni al WC. Llévalo a la farmacia, donde deben hacerse cargo de él.</li>
+    <li> No agobies a los niños con juguetes complejos que requieren baterías. Déjales jugar con su imaginación. Es mas sano y hasta les favorecerás con un mejor desarrollo cognitivo.</li>
+    <li>Utiliza bolsas ecológicas en tus compras. No te cuesta nada, sirven igual que las comunes pero tienes la seguridad que no demandaron muchos recursos en su fabricación.</li>
+    <li>Retomemos la costumbre de usar botellas retornables. Por cada una que usemos habremos evitado que las fábricas de plásticos hayan producido contaminantes.</li>
+    <li>En muchas ciudades la calidad del agua de grifo es bastante buena, de serlo en tu ciudad toma el agua de ahí y evita el agua embotellada.</li>
+    <li> Deja el auto, camina, respira, disfruta del aire libre (donde haya aire puro y no crimen), has ejercicio y no uses el elevador, sube las escaleras, usarás mejor energía eléctrica y fortalecerás la salud.</li>
+    <li> Reutiliza el aceite de cocina para hacerlos jabones en barra y no viertas el aceite usado por el fregador.</li>
+    <li> No compres lo que no hace falta. Necesitemos menos y tendremos mas.</li>
+    <li>Procura consumir tus alimentos y bebidas en el local de expendio de comida, evitarás innecesariamente más embalaje que genera basura como plásticos, cartón y papel.</li>
+    <li>El agua que utilices en la preparación de alimentos puede ser almacenada para luego usarla en el riego de plantas.</li>
+    <li>Utiliza la escoba para limpiar tus pisos y no malgastarás agua de manguera en tiempos donde tener accesos seguro a este elemento vital se ha convertido en un privilegio. Además, con más escobas, mas salud por el ejercicio a realizar.</li>
+    <li>Si es posible, consume alimentos producidos en granjas orgánicas que en los de agricultura intensiva porque pierden cuatro veces más de suelo.</li>
+    <li>Cierra el grifo al cepillarte los dientes. Ahorrarás entre 40 a 80 litros de agua cada mes.</li>
+    <li>Descongela el refrigerador para evitar que haya escape de frío y demande más energía. Cuando la capa de hielo llegue a los 5 milímetros hazlo. El exceso de hielo produce un incremento en el consumo energético de hasta 20%.</li>
+    <li> Espera a acumular una cantidad considerable de ropa sucia para usar recién la lavadora. Lavar un par de prendas es un desperdicio de agua, energía, detergente y tiempo.</li>
+    <li>Si puedes escoger viajar por avión, tren, bus o tu automóvil, escoge el que menos contamine, Si son varias personas que viajan o se transportan juntos mejor aún. Reducirás la huella ecológica.</li>
+    <li>Infórmate sobre el delicado estado de nuestro ambiente. Debemos estar educados y conscientes que requerimos medidas urgentes y ciudadanos predispuestos a cambiar esta realidad.</li>
+    <li> Sé crítico con la publicidad. Mira las cualidades de los productos, no los sueños a publicidad a veces engaña.</li>
+    <li>Las 3R´s ahora se incrementaron, te propongo: reutilizar, reciclar, reparar, rechazar, reclamar, redistribuir, reeducar a fin de optimizar el consumo de bienes y generar menos desperdicios.</li>
+    <li>Riega tus plantas de preferencia o muy temprano o muy tarde. La idea es evitar la evaporación del agua por el sol. Riega con mangueras ahorradoras de agua y deja de malgastar el agua “inundando” el césped.</li>
+    <li>Compra productos a granel, porque son más baratos, no tienen una huella ecológica mayor que los comercializados a detalle. Ahorrarás dinero y darás una mano al medio ambiente al evitar que los envases vayan a la basura.</li>
+    <li>Si tienes la idea de adquirir un automóvil, elige los modelos compactos y de mayor eficiencia energética en el consumo. No necesitas alimentar tu “ego” con esos “tanques” que tragan combustibles (como los “Hummer”) sino utilizar el automotor de manera inteligente y amigable con el ambiente.</li>
+    <li>Cocina la cantidad adecuada para evitar tirar la basura así como compra lo que vayas a consumir para no gastar mas de lo debido como también evitar botar los alimentos.</li>
+    <center>
+    <img src ="imagenes/9.jpg" width="70%" height="40%">
+    </center>
+ </ol>
+ </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+  <h4>Aplicación Cinco</h4>
+ <h4>Pérez Salvador Diana Laura</h4>
+  </div>
+  </div>
+  </div>
+ </body>
+ </html>
